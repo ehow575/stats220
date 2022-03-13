@@ -1,4 +1,4 @@
-### Welcome to my GitHub Page!
+# Welcome to my GitHub Page!
 
 This course has been my first introduction to writing in code languages and GitHub.
 
