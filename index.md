@@ -101,4 +101,4 @@ image_write(border_final, "my_meme.png")
 
 
 ###Time I get back to the rest of my assignments - talk later...
-![]https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif
+![](https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif)
