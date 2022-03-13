@@ -13,11 +13,13 @@ Outside of Univeristy, I have a part time job (*shameless plug for [HOYTS](https
 
 ## My Meme
 
-I have attached the meme I created for my stats220 course using RStudio and the package [{magick}](https://cran.r-project.org/web/packages/magick/vignettes/intro.html). 
+I have attached the meme I created for my stats220 course the package [{magick}](https://cran.r-project.org/web/packages/magick/vignettes/intro.html). 
 
 ![](my_meme.png)
 
-```{r my_meme, eval=FALSE)
+I used the following R code to create my meme in R Studio. R Studio is a free to download software so click the [link](https://www.rstudio.com/products/rstudio/download/) if you are interested in downloading to see how my code creates a meme or to make a meme of your own. 
+
+```{r my_meme)
 #import and scale images for meme and save under easy-to-remember names
 tired_barbie <- image_read("https://s11.favim.com/orig/7/718/7180/71809/funny-crazy-memes-Favim.com-7180974.jpg"
 ) %>% image_scale(200)
