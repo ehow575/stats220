@@ -16,3 +16,67 @@ Outside of Univeristy, I have a part time job (*shameless plug for [HOYTS](https
 I have attached the meme I created for my stats220 course using RStudio and the package [{magick}](https://cran.r-project.org/web/packages/magick/vignettes/intro.html). 
 
 ![](my_meme.png)
+
+```{r my_meme, eval=FALSE)
+#import and scale images for meme and save under easy-to-remember names
+tired_barbie <- image_read("https://s11.favim.com/orig/7/718/7180/71809/funny-crazy-memes-Favim.com-7180974.jpg"
+) %>% image_scale(200)
+
+glam_barbie <- image_read("https://cdn131.picsart.com/312785891255211.png"
+) %>% image_scale(200) %>% image_background("hotpink")
+
+magic_pic <- image_read("https://media.istockphoto.com/photos/open-book-with-magic-light-and-colored-smoke-picture-id1188168701?k=20&m=1188168701&s=612x612&w=0&h=FxXr2klRFDaMYCsglo2yBJD_1OitPKbRJ3bW9rAwSuY="
+) %>% image_scale("400") 
+
+#create boxes to annotate with captions
+tired_box <- image_blank (width = 200,
+                          height = 200,
+                          color ="#000000") %>% image_annotate(text="Me before\n coffee",
+                                                               color = "#9933ff",
+                                                               size = 30,
+                                                               font = "Comic Sans MS",
+                                                               gravity = "center")
+
+glam_box <- image_blank (width = 200,
+                         height = 200,
+                         color ="#000000") %>% image_annotate(text="Me after\n coffee",
+                                                              color = "#9933ff",
+                                                              size = 30,
+                                                              font = "Comic Sans MS",
+                                                              gravity= "center")
+
+#layer sparkles on top of magic image
+
+sparkle_pic <- image_read("https://www.onlygfx.com/wp-content/uploads/2018/09/5-gold-sparkle-4.png"
+) %>% image_scale(400)
+
+magic_layered_vector <-c(magic_pic, sparkle_pic)
+magic_layered <- image_mosaic(magic_layered_vector)
+
+
+#annotate middle magic image 
+
+annotatedmagic_pic<-image_annotate(magic_layered, text="Caffeine doing it's magic...",
+                                   color = "#ffffff",
+                                   size = 30,
+                                   font = "Comic Sans MS",
+                                   gravity= "center")
+
+#stack rows on top of each other
+tired_vector <- c(tired_barbie,tired_box)
+top_row <-image_append(tired_vector)
+
+glam_vector <- c(glam_barbie,glam_box)
+bottom_row <- image_append(glam_vector)
+
+magic_row<-image_append(annotatedmagic_pic)
+
+final<-c(top_row, magic_row, bottom_row) %>%
+  image_append(stack=TRUE)
+
+#add border 
+border_final <-image_border(final, "#9933ff", "20x10")
+
+#save meme
+image_write(border_final, "my_meme.png")
+```
