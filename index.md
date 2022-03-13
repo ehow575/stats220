@@ -13,5 +13,6 @@ Outside of Univeristy, I have a part time job (*shameless plug for [HOYTS](https
 
 ## My Meme
 
-I have attached the meme I created for my stats220 course using RStudio and the package [{magick}](https://cran.r-project.org/web/packages/magick/vignettes/intro.html)
+I have attached the meme I created for my stats220 course using RStudio and the package [{magick}](https://cran.r-project.org/web/packages/magick/vignettes/intro.html). 
 
+![](my_meme.png)
