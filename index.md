@@ -13,12 +13,22 @@ Outside of Univeristy, I have a part time job (*shameless plug for [HOYTS](https
 
 ## My Meme
 
-I have attached the meme I created for my stats220 course the package [{magick}](https://cran.r-project.org/web/packages/magick/vignettes/intro.html). 
+I have attached the meme I created for my **stats220 course** the package [{magick}](https://cran.r-project.org/web/packages/magick/vignettes/intro.html). 
 
 ![](my_meme.png)
 
-I used the following R code to create my meme in R Studio. R Studio is a free to download software so click the [link](https://www.rstudio.com/products/rstudio/download/) if you are interested in downloading to see how my code creates a meme or to make a meme of your own. 
+I used R code to create my meme in R Studio. R Studio is a free to download software so click the [link](https://www.rstudio.com/products/rstudio/download/) if you are interested in downloading to see how my code creates a meme or to make a meme of your own. 
 
+**A quick explanation of steps in creating my meme**
+1. Imported the three pictures I knew I wanted to use (disheveled barbie, spell book photo, glam barbie)
+2. Created black caption boxes for barbie photos
+3. Imported a picture of sparkles to layer on top of the spell book photo, then captioned this picture too
+4. I created vectors with the barbie pictures and the corresponding black caption box
+5. Appended these vectors as rows and stacked them on top of each other vertically to create the meme
+6. Added a border around the meme
+7. Saved the meme as a .png
+
+My R code is as follows; 
 ```{r my_meme)
 #import and scale images for meme and save under easy-to-remember names
 tired_barbie <- image_read("https://s11.favim.com/orig/7/718/7180/71809/funny-crazy-memes-Favim.com-7180974.jpg"
@@ -82,3 +92,11 @@ border_final <-image_border(final, "#9933ff", "20x10")
 #save meme
 image_write(border_final, "my_meme.png")
 ```
+
+
+**Inspiration behind my meme**
+- I knew I wanted to make a meme about coffee, as anyone close to me knows how coffee is a central aspect of my personality lol
+- I can't function without a coffee in the morning, so I wanted to play on the fact that caffeine is the magic potion that turns me from a mess to presentable in the morning.
+- The meme format I used is common with the picture alongside a black caption box, but I wanted to break up this format slightly by adding the longer picture in the middle. I used the disheveled barbie picture which I've seen before in memes and then I searched for a glamorous barbie to emphasise the extent of the transition caffeine enables. 
+
+
