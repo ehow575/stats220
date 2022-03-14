@@ -95,7 +95,7 @@ image_write(border_final, "my_meme.png")
 
 
 **Inspiration behind my meme**
-- I knew I wanted to make a meme about coffee, as anyone close to me knows how coffee is a central aspect of my personality lol
+- I knew I wanted to make a meme about coffee, as anyone close to me knows how coffee is a central aspect of my personality. 
 - I can't function without a coffee in the morning, so I wanted to play on the fact that caffeine is the magic potion that turns me from a mess to presentable in the morning.
 - The meme format I used is common with the picture alongside a black caption box, but I wanted to break up this format slightly by adding the longer picture in the middle. I used the disheveled barbie picture which I've seen before in memes and then I searched for a glamorous barbie to emphasise the extent of the transition caffeine has on me.  
 
