@@ -6,7 +6,7 @@ This course has been my first introduction to writing in code languages and GitH
 
 I am a Commerce and Arts conjoint student and am currently in my 4th year here at the University of Auckland. 
 
-Outside of Univeristy, I have a part time job (*shameless plug for [HOYTS](https://www.hoyts.co.nz)*) and have a passion for playing detective 🔍 when watching true crime shows and podcasts. 
+Outside of Univeristy, I have a part time job (*shameless plug for [HOYTS](https://www.hoyts.co.nz)*) and have a passion for playing detective 🔍 when watching true crime shows and podcasts (and most importantly coffee as you'll soon see). 
 
 ![](https://media4.giphy.com/media/o2CbCvGN6qaUsHYu4F/giphy.gif)
 
