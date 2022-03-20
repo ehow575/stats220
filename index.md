@@ -100,6 +100,6 @@ image_write(border_final, "my_meme.png")
 - The meme format I used is common with the picture alongside a black caption box, but I wanted to break up this format slightly by adding the longer picture in the middle. I used the disheveled barbie picture which I've seen before in memes and then I searched for a glamorous barbie to emphasise the extent of the transition caffeine has on me.  
 
 
-### Time I get back to the rest of my assignments - talk later...
+### Time I get back to the rest of my assignments - I'm sure I'll see you soon...
 
 ![](https://media0.giphy.com/media/unQ3IJU2RG7DO/giphy.gif)
